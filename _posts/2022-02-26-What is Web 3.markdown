@@ -1,0 +1,12 @@
+---
+layout: single
+title:  "Coding paradigm for Decentralized Application Development"
+date:   2022-02-26 14:17:38 +0200
+categories: web3 blockchain 
+---
+
+## Proposal
+
+The core question that I am pursuing in this project is: How do you develop Decentralized Applications? I believe we require a way to compose dApps from Ergo Boxes - Wallets, Smart Contracts and Transactions, much like Functional Programming allows you to compose applications from pure functions.
+
+Test
