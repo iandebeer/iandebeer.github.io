@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Resumé"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About me"
+    url: about
   - title: "Gedigte"
-    url: /gedigte/
+    url: /portfolio/index.html
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
