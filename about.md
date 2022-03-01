@@ -23,7 +23,7 @@ University of South Africa
 ## WORK EXPERIENCE
 
 MN8 Technology — CTO (Aug 2019- Current)
-Startup focused on developing a  platform for integrating Self Sovereign Identity (Indy and Aries) and Smart Contracts (DAML on Fabric) on Cloud Native technology.
+Startup focused on developing a  platform for integrating Self Sovereign Identity (Indy and Aries) and Smart Contracts (Ergo, Cardano and DAML on Fabric) on Cloud Native technology.
 
 EOH  Chief Technology Officer (July 2018 - Aug 2019)
 Run EOH Innovation Centre; Identity BlockChain; Big Data; MultiCloud 
