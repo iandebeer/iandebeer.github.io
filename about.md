@@ -43,7 +43,7 @@ Image Processing (X-Ray scanning annotation, transmission and storage)
 
 ## TECHNOLOGY SKILLS
 
-Cloud Compting: Deep understanding of Cloud Native Compute environment,
+Cloud Computing: Deep understanding of Cloud Native Compute environment,
 Containers, Orchestration, Function as a Service/Serverless
 
 Data: IoT, Big/Fast Data, GeoTemporal correlation, GraphDb’s
