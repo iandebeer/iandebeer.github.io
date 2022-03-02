@@ -32,6 +32,26 @@ Stochastic Petri Nets are also used for validating and testing the Liveness, Bou
 
 I believe we require a way to compose dApps from Ergo Boxes - Wallets, Smart Contracts and Transactions, much like Functional Programming allows you to compose applications from pure functions.
 
+I wanted to test an intuition that the Categorical  (monoidal) aspects of Petri Nets lend itself to composing a dApp from the Boxes (Places) with guarding Contracts and  Transactions (Transitions).   I am basing this intuition on prior work I have done in creating an implementation of PetriNets (see https://github.com/iandebeer/castanet). It is a generalized implementation in Scala 3, developed with intent  to compose applications from Knative Services under Kubernetes.
+
+As a starting point for ErgoHack, I used the "Heads or Tails Game" from the Ergoscript by Example repository (https://github.com/ergoplatform/ergoscript-by-example/blob/main/headsOrTails.md), to test the concept. I picked this example to render as a Petri Net because it has finite looping (5 plays) and forking and joining concepts. I want build this out so I can visualize this dApp, and then generalize the concept from there, to a point where one use it for dApp development by visualizing the stages, validating the flow, and running an instance of the dApp in the ErgoPlayground or through Appkit on the Ergo Blockchain.
+
+I want to implement an Ergo-Castanet Client API over GRPC that will support:
+
+```scala
+val dAppID: String                = addDApp(flowSpec: org.ergoplatform.flow.spec.flowspec.FlowSpec)
+val pngURL: URL                   = visualiseDApp(dAppID: String)
+val animated_GIF_URL: URL         = validateDApp(dAppID: String ,markers: Seq(FlowMarkers)
+val markerBitMap: Long            = excuteStepDApp(dAppID : String, markerBitMap: Long, transaction:ErgoTransaction)
+```
+
+Using the above API with the Head-or-Tails example I expect to visualize the dApp in the following Petri Net:
+
+![Petri Net](/assets/images/Heads-Tails-Net.png)
+
+ I created a project on GitHub: https://github.com/iandebeer/ergo-castanet.  The project depends on another open source project I published on GitHub https://github.com/iandebeer/castanet 
+ I implemented a GRPC client/server using the Typelevel FS2-GRPC framework. The protobuf I pulled from https://github.com/ergoplatform/ergo-appkit/tree/develop/docs/design-contracts.
+
 ## As applied to the Cardano
 
 ## As applied to cross-chain dApp development
