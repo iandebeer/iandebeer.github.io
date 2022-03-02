@@ -5,4 +5,4 @@ author_profile: false
 permalink: /dassie/
 --- 
 
-![alt text](/assets/images/dassie.png "Dassie")
+![Tao van die Dassie](/assets/images/dassie.png "Dassie")

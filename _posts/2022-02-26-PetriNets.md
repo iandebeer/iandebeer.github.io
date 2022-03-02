@@ -7,14 +7,18 @@ categories: web3 blockchain
 
 ## Proposal
 
-The core question that I am pursuing in this proposal is: How do you develop Decentralised Applications? 
+The core question that I am pursuing in this proposal is: How do you develop Decentralized Applications in a cost effective ?  Looking at it from a Functional Programming perspective, it looks like a case for composition of smart contracts as pure functions into higher order functions - dApps. Bounded Petri Nets exhibits Categorical Semantics in the way that **concatenable processes as strict Monoidal categories** model Net computations [[1]](#1) [[2]](#2)It is easy to see (if you are that way inclined) that Petri Nets form a Category of Petri. A _Coloured_ Petri Net is traversable using a state monad to step from an initial state to subsequent state.
 
 Formally, a Petri Net is a state transition graph that maps Places (circles) to Transitions (rectangles) and Transitions to Places via Arcs (arrows).
-It is well suited for describing the flow of discrete concurrent processes.
+It is well suited for describing the flow of discrete concurrent processes. Petri Nets are more concise than other process flow descriptions (like UML or BPMN) in that they have an exact mathematical definition of their execution semantics, with a well-developed mathematical theory for process analysis.
 
-Petri Nets are more concise than other process flow descriptions (like UML or BPMN) in that they have an exact mathematical definition of their execution semantics, with a well-developed mathematical theory for process analysis. Bounded Petri Nets exhibits Categorical Semantics in the way that **concatenable processes as strict Monoidal categories** model Net computations [[1]](#1) [[2]](#2)
+From the proposal perspective, Petri Nets are directed graphs consisting of Places(Stages), Transitions(Actions) and Arcs(Transaction). It models state-transitions of (concurrent) processes. I contend that there is a need to handle consecutive Smart Contract invocations (the dApp Protocol) within the context of a encapsulating state machine (FSM) as expressed by a Petri Net and executed by an off-chain dApp-container.
 
-Because of its Markov property - states depend only on the current marking -  Stochastic Petri Nets are also used for validating and testing the Liveness, Boundedness and Reachability of distributed networks.
+Because of it's Markov property - state transitions depend only on the currently available state.  In addition to main artifacts mentioned above, Petri Net execution relies on Markers and Tokens. The Marker indicates a requirement-gate that needs to be satisfied before the next transition can take place. For a given set of Tokens (current state) the PetriNet can be asked to step through to the next state (set of Tokens) as indicated by the Markers - guards - placed on the Arcs that join Places and Transitions.
+
+![alt text](/assets/images/animate.gif "flow")
+
+Stochastic Petri Nets are also used for validating and testing the Liveness, Boundedness and Reachability of distributed networks.
 
 1. A business analyst should  create a dApp Protocol by joining Places (States) and Transitions with Arcs
 2. Configuration of a specific instance of a dApp can be programmatically created or be informed by the UI connecting to the headless dApp through a GRPC/HTTP API
@@ -28,4 +32,6 @@ Because of its Markov property - states depend only on the current marking -  St
 
 I believe we require a way to compose dApps from Ergo Boxes - Wallets, Smart Contracts and Transactions, much like Functional Programming allows you to compose applications from pure functions.
 
+## As applied to the Cardano
 
+## As applied to cross-chain dApp development
