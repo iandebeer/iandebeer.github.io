@@ -18,7 +18,7 @@ Recently my focus has been on developing a Decentralised Marketplace Platform ut
 HS Transvalia - Vanderbijlpark: Matriculated 1973
 
 University of South Africa
-1978 - 1981: Diploma Data HS metrics
+1978 - 1981: Diploma Data Metrics
 
 ## WORK EXPERIENCE
 
