@@ -7,7 +7,7 @@ permalink: /about/
 
 ## PROFILE
 
- My career in the IT industry pre-dates the internet era. I have worked on real-time embedded systems, large B2B integration projects and lately Big Data Analytics and Distributed Ledger Technology. Over the past 25 years I have established and managed 4 software technology companies. During this time I was able to maintain a deep level of technical leadership in all the projects, from conceptualisation and architectural design through coding and implementation.
+ The start of my career in the IT industry pre-dates the internet era. I have worked on real-time embedded systems, large B2B integration projects and lately Big Data Analytics and Distributed Ledger Technology. Over the past 25 years I have established and managed 4 software technology companies. During this time I was able to maintain a deep level of technical leadership in all the projects, from conceptualisation and architectural design through coding and implementation.
 
 As one of the early adopters of the Scala language, I have a deep understanding and experience in Reactive and Functional programming paradigms, with a special interest in the compositional nature of Petri Nets and how it can be applied in the development of  <a href="https://iandebeer.github.io/web3/blockchain/PetriNets/"> Decentralized Applications  (dApps).</a>
 
