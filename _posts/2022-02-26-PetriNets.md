@@ -7,10 +7,23 @@ categories: web3 blockchain
 
 ## Proposal
 
-The core question that I am pursuing in this proposal is: How do you develop Decentralized Applications in a cost effective and resource effective manner?  Looking at it from a Functional Programming perspective, it looks like a case for composition of smart contracts as pure functions into higher order functions - dApps. Bounded Petri Nets exhibits Categorical Semantics in the way that **concatenable processes as strict Monoidal categories** model Net computations [[1]](#1) [[2]](#2)It is easy to see (if you are that way inclined) that Petri Nets form a Category of Petri. A _Coloured_ Petri Net is traversable using a state monad to step from an initial state to subsequent state.
+The core question that I am pursuing in this proposal is: How do you develop Decentralized Applications in a cost effective and resource effective manner?  
 
-Formally, a Petri Net is a state transition graph that maps Places (circles) to Transitions (rectangles) and Transitions to Places via Arcs (arrows).
-It is well suited for describing the flow of discrete concurrent processes. Petri Nets are more concise than other process flow descriptions (like UML or BPMN) in that they have an exact mathematical definition of their execution semantics, with a well-developed mathematical theory for process analysis.
+In category theory, a Petri net can be described as a directed bipartite graph with two types of nodes: places and transitions. The edges of the graph represent the flow of tokens between places and transitions.
+
+A coloured Petri net is a variation of a Petri net in which the tokens are not just simple markers, but are instead labeled with a "colour" that represents some additional information about the token. For example, the colour could represent the type of a product being processed in a manufacturing system, or the state of a system being modeled.
+
+In category theory, the places in a coloured Petri net can be thought of as objects, and the transitions can be thought of as morphisms between those objects. The flow of tokens between places and transitions can be thought of as the composition of morphisms. The colours of the tokens can be thought of as labels on the morphisms, representing additional structure or information about the flow of tokens.
+
+Overall, a coloured Petri net can be seen as a way of modeling the flow of labeled tokens through a system, with the structure of the Petri net representing the relationships between the different places and transitions in the system.
+
+Looking at it from a Functional Programming perspective, it looks like a case for composition of smart contracts as pure functions into higher order functions - dApps. Bounded Petri Nets exhibits Categorical Semantics in the way that **concatenable processes as strict Monoidal categories** model Net computations [[1]](#1) [[2]](#2)It is easy to see (if you are that way inclined) that Petri Nets form a Category of Petri. A _Coloured_ Petri Net is traversable using a state monad to step from an initial state to subsequent state.
+
+In category theory, the colours of the transitions in a coloured Petri net can be represented by an additional layer of structure on the category, called a functor. This functor assigns to each transition in the category a colour in some fixed set of colours.
+
+The objects in the category corresponding to a coloured Petri net are still the places in the net, and the morphisms are still the transitions. However, the transitions are now decorated with colours, which can be used to describe additional properties or constraints on their behavior.
+
+For example, a coloured Petri net might be used to model a manufacturing process in which different types of resources (represented by different colours) are required for different types of operations (represented by the transitions). In this case, the functor representing the colours of the transitions could be used to enforce the requirement that certain transitions can only be performed if the necessary resources are available.
 
 From the proposal perspective, Petri Nets are directed graphs consisting of Places(Stages), Transitions(Actions) and Arcs(Transaction). It models state-transitions of (concurrent) processes. I contend that there is a need to handle consecutive Smart Contract invocations (the dApp Protocol) within the context of a encapsulating state machine (FSM) as expressed by a Petri Net and executed by an off-chain dApp-container.
 
