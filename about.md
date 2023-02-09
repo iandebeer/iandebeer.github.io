@@ -11,7 +11,7 @@ permalink: /about/
 
 As one of the early adopters of the Scala language, I have a deep understanding and experience in Reactive and Functional programming paradigms, with a special interest in the compositional nature of Petri Nets and how it can be applied in the development of  <a href="https://iandebeer.github.io/web3/blockchain/PetriNets/"> Decentralized Applications  (dApps).</a>
 
-Recently my focus has been on developing a <a href="https://iandebeer.github.io/web3/blockchain/What-is-Web-3/"> Decentralised Marketplace Platform </a> utilising SSI, Tokenisation and Smart Contract technology. 
+Recently my focus has been on developing a <a href="https://iandebeer.github.io/web3/blockchain/What-is-Web-3/"> Decentralised Marketplace Platform </a> utilising W3C standards for DID and DIDComm along with Tokenisation and Smart Contract technology. 
 
 ## EDUCATION
 
